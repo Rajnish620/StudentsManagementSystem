@@ -1,0 +1,127 @@
+*{
+        padding: 0;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    body{
+        background-color: black;
+    }
+    h1{
+        margin: 10px;
+        color: aquamarine;
+        text-align: center;
+        
+        
+    }
+    hr{
+        border: none;
+        border-bottom:1px solid gray ;
+        margin: 10px 30px;
+       
+    }
+    .dashboard-container{
+        margin: 10px;
+       
+        padding-bottom: 100px;
+        text-align: center;
+        background-color: rgb(24, 23, 23);
+        
+        
+         
+       
+
+    }
+
+    .bottons-container{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(38, 36, 36);
+        border-radius: 5px;
+      
+      
+        
+    }
+    .bottons-container div {
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        background-color: rgb(56, 56, 56);
+        color: #ffecec;
+        box-shadow: 0px 0px 5px gray;
+        
+    }
+    .bottons-container div a{
+        text-decoration: none;
+        color: aquamarine;
+    }
+    .header {
+        margin: 10px;
+        color: aquamarine;
+    }
+
+    .data-container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: rgb(38, 36, 36);
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px gray;
+    }
+    .data-container table{
+        width: 100%;
+        height: 100%;
+        color: antiquewhite;
+        border: 1px solid white;
+        border-collapse: collapse;
+
+        
+        
+    }
+     .data-container table th {
+     padding: 10px;
+     font-size: 20px;
+     background-color: cadetblue;
+  }
+  .data-container table td{
+    padding: 5px;
+     border: 1px solid gray;
+     background-color: black;
+  }
+
+    .data-container table tr td:hover{
+        background-color: rgb(68, 66, 66);
+    }
+
+
+@media (max-width:700px) {
+        .dashboard-container{
+            width: 700px;
+        }
+}
+
+    /* .save-cancel-button{
+        display: flex;
+        justify-content: space-evenly;
+         */
+        
+        
+        
+    /* }
+    .save-cancel-button div button {
+        position: fixed;
+        bottom: 50px;
+        padding: 8px 30px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        background-color: rgb(62, 59, 59);
+        color: aquamarine;
+        box-shadow: 0px 0px 5px gray;
+        font-size: 16px;
+       
+        
+    }
+     */

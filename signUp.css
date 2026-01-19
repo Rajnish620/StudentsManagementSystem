@@ -1,0 +1,13 @@
+.buttons a{
+    text-decoration: none;
+    color: cadetblue;
+    
+    
+}
+.buttons a:hover{
+    color: aquamarine;
+}
+.margin{
+    margin-top: 10px;
+
+}
