@@ -13,22 +13,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     let data = localStorage.getItem("students");
-    let studentsArray = data.split("|");
+    
+    
+    if (data !== null && data !== "") {
+        let studentsArray = data.split("|");
 
-    for (let i = 0; i < studentsArray.length; i++) {
-        let details = studentsArray[i].split(",");
+        for (let i = 0; i < studentsArray.length; i++) {
+            let details = studentsArray[i].split(",");
 
-        if (details[1] === RegNumber) {
-           alert("This Reg. Number allready exist");
-           return;
-        }
-        if(details[3]===className){
-            if(details[2]===roll){
-                alert("This Roll Number allready exist");
-                return;
+            if (details[1] === RegNumber) {
+               alert("This Reg. Number allready exist");
+               return;
             }
+            if(details[3]===className){
+                if(details[2]===roll){
+                    alert("This Roll Number allready exist");
+                    return;
+                }
+            }
+            
         }
-        
     }
         
         
@@ -49,10 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const studentData = name + ","+ RegNumber + "," + roll + "," + className + "," + age;
 
+
+        
         let allStudents = localStorage.getItem("students");
        
 
-        if (allStudents !== "") {
+        if (allStudents !== null && allStudents !== "") {
             allStudents = allStudents + "|" + studentData;
         } else {
             allStudents = studentData;
